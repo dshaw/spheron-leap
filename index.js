@@ -4,7 +4,7 @@ var Leap = require('leapjs');
 var spheron = require('spheron');
 
 // Set this to the device Sphero connects as on your computer
-var device = '/dev/cu.Sphero-PBR-RN-SPP';
+var device = process.argv[2] || '/dev/cu.Sphero-PBR-RN-SPP';
 
 var safeMode = true; //Turn this off if Sphero is in water or you like to live dangerously!
 
